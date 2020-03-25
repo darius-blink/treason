@@ -710,7 +710,7 @@ function stateMessage() {
 }
 function labelClass(role, revealed) {
     if (revealed) {
-        return 'label-revealed';
+        return 'label-revealed-'+role;
     } else if (role == 'not dealt') {
         return 'label-unknown';
     } else {

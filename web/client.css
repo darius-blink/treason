@@ -78,9 +78,6 @@ div.chat {
     margin-bottom: 10px;
     word-wrap: break-word;
 }
-.label-revealed {
-    background-color: #aaa;
-}
 .label-unknown {
     color: #444;
     background: white;
@@ -109,20 +106,41 @@ div.chat {
 .btn-action:disabled:hover {
     color: #888;
 }
+.label-revealed {
+    background-color: #aaa;
+}
+.label-revealed-duke {
+    background-color: hsl(273, 100%, 75%);
+}
 .label-duke, .btn-duke, .btn-duke:focus, .btn-tax, .btn-tax:focus {
     background-color: hsl(280, 60%, 50%);
+}
+.label-revealed-assassin {
+    background-color: hsl(0, 0%, 49%);
 }
 .label-assassin, .btn-assassin, .btn-assassin:focus, .btn-assassinate, .btn-assassinate:focus {
     background-color: hsl(0, 0%, 20%);
 }
+.label-revealed-contessa {
+    background-color: hsl(358, 100%, 71%);
+}
 .label-contessa, .btn-contessa, .btn-contessa:focus {
     background-color: hsl(359, 60%, 50%);
+}
+.label-revealed-ambassador {
+    background-color: hsl(77, 100%, 77%);
 }
 .label-ambassador, .btn-ambassador, .btn-ambassador:focus, .btn-exchange, .btn-exchange:focus {
     background-color: hsl(80, 60%, 45%);
 }
+.label-revealed-inquisitor {
+    background-color: hsl(50, 100%, 79%);
+}
 .label-inquisitor, .btn-inquisitor, .btn-inquisitor:focus, .btn-interrogate, .btn-interrogate:focus {
     background-color: hsl(55, 60%, 45%);
+}
+.label-revealed-captain {
+    background-color: hsl(177, 37%, 68%);
 }
 .label-captain, .btn-captain, .btn-captain:focus, .btn-steal, .btn-steal:focus {
     background-color: hsl(195, 60%, 50%);
