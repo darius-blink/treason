@@ -708,11 +708,8 @@ function formatMessage(message) {
 function stateMessage() {
     return formatMessage(vm.state.state.message() || "");
 }
-function labelClass(role, revealed, isSelf) {
+function labelClass(role, revealed) {
     if (revealed) {
-        if (isSelf) {
-            return 'label-revealed';
-        }
         return 'label-'+role;
     } else if (role == 'not dealt') {
         return 'label-unknown';
