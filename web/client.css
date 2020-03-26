@@ -106,7 +106,7 @@ div.chat {
 .btn-action:disabled:hover {
     color: #888;
 }
-.current-player-influences .label {
+.current-player-influences .label-revealed {
     background-color: #aaa !important;
 }
 .label-revealed {
