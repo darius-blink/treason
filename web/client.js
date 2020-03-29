@@ -626,6 +626,12 @@ function ourInfluence() {
     var player = ourPlayer();
     return player && player.influence();
 }
+function influenceImageSrc(role) {
+    if (role==='unknown')
+        return "images\\card-back.png";
+
+    return "images\\" + role + ".png";
+}
 function ourInfluenceCount() {
     var player = ourPlayer();
     return player && player.influenceCount();

@@ -15,11 +15,12 @@
                 <span class="badge" data-bind="text: '$' + cash(), visible: !isObserver()"></span>
                 <span class="glyphicon glyphicon-eye-open observer" data-bind="visible: isObserver()"></span>
             </div>
-            <div class="col-xs-6" data-bind="css: { 'current-player-influences' : $index() == $root.state.playerIdx() }">
-                <!-- ko foreach: influence -->
-                    <span class="label" data-bind="text: role, css: labelClass(role(), revealed()), tooltip: { title: roleDescription(role()), trigger: 'hover', placement: 'right' }"></span><br/>
-                <!-- /ko -->
+            <!-- ko foreach: influence -->
+            <div class="col-xs-3">
+                <img class="img-thumbnail" data-bind="attr:{src: influenceImageSrc(role())}, css:labelClass(role(), revealed())"/>
             </div>
+            <!-- /ko -->
+
         </div>
     </li>
 </ul>
@@ -32,10 +33,12 @@
         </div>
     </li>
     <li class="list-group-item">
-        <a href="javascript: null" data-bind="event: {vclick: showCheatSheet}, visible: sidebar() != 'cheat'">Cheat sheet</a>
+        <a href="javascript: null" data-bind="event: {vclick: showCheatSheet}, visible: sidebar() != 'cheat'">Cheat
+            sheet</a>
         <div data-bind="visible: sidebar() == 'cheat'">
             <!-- ko foreach: state.roles -->
-                <p><span class="label" data-bind="text: $data, css: labelClass($data)"></span> <span data-bind="text: roleDescription($data)"></span></p>
+            <p><span class="label" data-bind="text: $data, css: labelClass($data)"></span> <span
+                        data-bind="text: roleDescription($data)"></span></p>
             <!-- /ko -->
             <!-- ko if: state.roles().length === 0 -->
             <p>Not available until the game starts</p>

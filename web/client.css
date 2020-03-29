@@ -78,10 +78,8 @@ div.chat {
     margin-bottom: 10px;
     word-wrap: break-word;
 }
-.label-unknown {
-    color: #444;
-    background: white;
-    border: 1px solid #444;
+.label-revealed {
+    opacity: 0.6;
 }
 .btn-action {
     border-color: #ccc;
@@ -245,4 +243,9 @@ h3 {
 }
 .error {
     color: red;
+}
+
+/* Overrides list-group-item from Bootstrap */
+.list-group-item {
+    padding: 3px 10px
 }
