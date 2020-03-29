@@ -79,7 +79,7 @@ div.chat {
     word-wrap: break-word;
 }
 .label-revealed {
-    opacity: 0.6;
+    opacity: 0.5;
 }
 .btn-action {
     border-color: #ccc;
@@ -103,12 +103,6 @@ div.chat {
 }
 .btn-action:disabled:hover {
     color: #888;
-}
-.current-player-influences .label-revealed {
-    background-color: #aaa !important;
-}
-.label-revealed {
-    background-color: #aaa;
 }
 .label-duke, .btn-duke, .btn-duke:focus, .btn-tax, .btn-tax:focus {
     background-color: hsl(280, 60%, 50%);

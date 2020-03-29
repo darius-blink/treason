@@ -627,9 +627,6 @@ function ourInfluence() {
     return player && player.influence();
 }
 function influenceImageSrc(role) {
-    if (role==='unknown')
-        return "images\\card-back.png";
-
     return "images\\" + role + ".png";
 }
 function ourInfluenceCount() {
@@ -716,7 +713,7 @@ function stateMessage() {
 }
 function labelClass(role, revealed) {
     if (revealed) {
-        return 'label-revealed label-'+role;
+        return 'label-revealed';
     } else if (role == 'not dealt') {
         return 'label-unknown';
     } else {

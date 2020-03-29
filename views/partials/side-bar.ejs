@@ -12,12 +12,17 @@
         <div class="row" data-bind="visible: !$root.waitingToPlay()">
             <div class="col-xs-6">
                 <span data-bind="text: name, css: { 'dead-player' : influenceCount() == 0 }"></span>
-                <span class="badge" data-bind="text: '$' + cash(), visible: !isObserver()"></span>
+                <span class="badge" data-bind="text: '$' + cash(), visible: !isObserver() && influenceCount() > 0"></span>
                 <span class="glyphicon glyphicon-eye-open observer" data-bind="visible: isObserver()"></span>
             </div>
             <!-- ko foreach: influence -->
             <div class="col-xs-3">
-                <img class="img-thumbnail" data-bind="attr:{src: influenceImageSrc(role())}, css:labelClass(role(), revealed())"/>
+                <!-- ko if: role() != 'unknown' -->
+                    <img class="img-thumbnail" data-bind="attr:{src: influenceImageSrc(role())}, css:labelClass(role(), revealed())"/>
+                <!-- /ko -->
+                 <!-- ko if: role() == 'unknown' -->
+                    <img class="img-responsive"  src="images\card-back.png" data-bind="css:labelClass(role(), revealed())"/>
+            <!-- /ko -->
             </div>
             <!-- /ko -->
 
