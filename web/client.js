@@ -629,15 +629,6 @@ function ourInfluence() {
 function influenceImageSrc(role) {
     return "images\\" + role + ".png";
 }
-function coinsOnRow(rowId, totalCoins) {
-    if (rowId === 0) {
-        // First row (first 6 coins)
-        return totalCoins < 6 ? totalCoins : 6;
-    } else if (rowId === 1) {
-        // Second row (last 6 coins)
-        return totalCoins > 6 ? totalCoins - 6 : 0;
-    }
-}
 function ourInfluenceCount() {
     var player = ourPlayer();
     return player && player.influenceCount();

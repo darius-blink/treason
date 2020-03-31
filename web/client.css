@@ -137,18 +137,6 @@ div.chat {
 .btn-duke:focus, .btn-tax:focus, .btn-assassin:focus, .btn-assassinate:focus, .btn-contessa:focus, .btn-ambassador:focus, .btn-exchange:focus, .btn-inquisitor:focus, .btn-interrogate:focus, .btn-captain:focus, .btn-steal:focus {
     color: white;
 }
-.coins-row {
-    padding-left: 10px;
-    margin-top: 4px;
-}
-.coin-div {
-    padding-left: 1px;
-    padding-right: 1px;
-    width:13%;
-}
-.coin-img {
-    max-width: 30px;
-}
 .hist-steal {
     border-left: 5px solid hsl(195, 60%, 50%);
 }
@@ -253,5 +241,5 @@ h3 {
 
 /* Overrides list-group-item from Bootstrap */
 .list-group-item {
-    padding: 3px 10px;
+    padding: 3px 10px
 }
