@@ -80,8 +80,8 @@
         <span class="label" data-bind="text: state.state.confession(), css: labelClass(state.state.confession())"></span><br/>
 
         Force <span data-bind="text: targetPlayerName()"></span> to exchange it for another role?<br/>
-        <button class="btn btn-default" data-bind="event: {vclick: interrogate.bind(null, true)}">Yes</button>
-        <button class="btn btn-default" data-bind="event: {vclick: interrogate.bind(null, false)}">No</button>
+        <button class="btn btn-default" data-bind="event: {vclick: interrogate.bind(null, true)}">Exchange</button>
+        <button class="btn btn-default" data-bind="event: {vclick: interrogate.bind(null, false)}">Keep</button>
     </div>
     <div data-bind="visible: weAreInState('action-response')">
         <i data-bind="css: state.state.action"></i>
